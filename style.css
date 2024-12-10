@@ -1,9 +1,30 @@
+:root {
+  --font: "Roboto", sans-serif;
+  --color1: #102223;
+  --color2: #346264;
+  --color3: #6df2fc;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
+  color: white;
   header {
-    padding: 90px 90px;
+    padding: 130px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("images/bg-featured-home.avif");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  main {
+    padding: 240px;
+    background-color: black;
+  }
+  footer {
+    padding: 30px;
+    background-color: var(--color1);
   }
 }
