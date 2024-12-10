@@ -1,0 +1,9 @@
+body {
+  font-family: "Roboto", sans-serif;
+  header {
+    padding: 90px 90px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("images/bg-featured-home.avif");
+    background-position: center;
+  }
+}
