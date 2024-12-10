@@ -18,13 +18,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    #header-container {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+    }
   }
   main {
-    padding: 240px;
+    padding: 260px;
     background-color: black;
   }
   footer {
-    padding: 30px;
+    padding: 20px;
     background-color: var(--color1);
   }
 }
