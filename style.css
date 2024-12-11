@@ -11,25 +11,34 @@ body {
   font-family: "Roboto", sans-serif;
   color: white;
   header {
-    padding: 130px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
       url("images/bg-featured-home.avif");
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    #header-container {
+    img {
+      margin: 4rem;
+    }
+    div {
       display: flex;
-      justify-content: space-between;
-      list-style: none;
+      justify-content: flex-end;
+      h1 {
+        width: 35%;
+        margin: 5rem;
+      }
     }
   }
-  main {
-    padding: 260px;
-    background-color: black;
+}
+main {
+  padding: 12rem;
+  background-color: black;
+  ul {
+    list-style: none;
   }
-  footer {
-    padding: 20px;
-    background-color: var(--color1);
+}
+footer {
+  padding: 0.3rem;
+  background-color: var(--color1);
+  ul {
+    list-style: none;
   }
 }
