@@ -87,13 +87,13 @@ body {
       }
       #top_story {
         width: 35%;
+        flex-wrap: wrap;
         h2 {
           padding-left: 2em;
         }
-        flex-wrap: wrap;
         li {
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           margin: 1em;
           div {
             margin-left: 1em;
