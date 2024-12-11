@@ -2,7 +2,9 @@
   --font: "Roboto", sans-serif;
   --color1: #102223;
   --color2: #346264;
-  --color3: #6df2fc;
+  --color3: #74a1a3;
+  --color4: #6df2fc;
+  --color5: #97c2c5;
 }
 a:link,
 a:visited {
@@ -47,14 +49,17 @@ body {
     }
   }
   main {
-    padding: 12rem;
+    padding: 1em 20em;
     background-color: black;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    p {
+      color: var(--color3);
+    }
     .read {
       text-decoration: underline;
-      color: var(--color3);
+      color: var(--color4);
     }
     h2 {
       background-color: var(--color1);
@@ -63,15 +68,17 @@ body {
     }
     > div {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
       #news {
-        width: 60%;
+        width: 40%;
+
         h2 {
           padding-left: 2em;
         }
 
         ul {
+          padding: 2em;
           display: flex;
           flex-wrap: wrap;
           li {
@@ -86,22 +93,34 @@ body {
         }
       }
       #top_story {
-        width: 35%;
+        width: 25%;
+
         flex-wrap: wrap;
         h2 {
           padding-left: 2em;
         }
-        li {
-          display: flex;
-          align-items: center;
-          margin: 1em;
-          div {
-            margin-left: 1em;
+        ul {
+          padding-bottom: 5em;
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+              margin: 1em 2em 0;
+              flex: 1;
+              max-width: 100%;
+            }
+            img {
+              margin: 1em 0;
+              flex: 1;
+              max-width: 100%;
+            }
           }
         }
       }
       #gallery {
-        width: 60%;
+        width: 40%;
         h2 {
           padding-left: 2em;
         }
@@ -120,7 +139,7 @@ body {
         }
       }
       #connect {
-        width: 35%;
+        width: 25%;
         h2 {
           text-align: center;
         }
@@ -152,7 +171,5 @@ footer {
         margin: 0.5em;
       }
     }
-  }
-  #copyright {
   }
 }
