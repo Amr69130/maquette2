@@ -4,6 +4,10 @@
   --color2: #346264;
   --color3: #6df2fc;
 }
+a:link,
+a:visited {
+  color: white;
+}
 
 body {
   margin: 0;
@@ -31,14 +35,42 @@ body {
 main {
   padding: 12rem;
   background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   ul {
     list-style: none;
+  }
+  h2 {
+    background-color: var(--color1);
+  }
+  #news {
+  }
+  #top_story {
+  }
+  #gallery {
+  }
+  #connect {
+    ul {
+      background-color: var(--color2);
+    }
   }
 }
 footer {
   padding: 0.3rem;
   background-color: var(--color1);
-  ul {
-    list-style: none;
+  display: flex;
+  justify-content: space-between;
+  nav {
+    ul {
+      /* margin-left: 1rem; */
+      display: flex;
+      gap: 0.5rem;
+
+      list-style: none;
+    }
+  }
+  #copyright {
+    margin-right: 1rem;
   }
 }
