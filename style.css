@@ -26,6 +26,7 @@ body {
     padding-left: 0;
     margin: 0;
   }
+
   h3,
   p {
     margin: 1em 0;
@@ -49,7 +50,7 @@ body {
     }
   }
   main {
-    padding: 1em 20em;
+    padding: 1em 2em;
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -66,9 +67,17 @@ body {
       margin-bottom: 0;
       padding: 0.5em 0;
     }
+
     > div {
       display: flex;
       justify-content: space-evenly;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        text-align: center;
+      }
 
       #news {
         width: 40%;
@@ -76,6 +85,11 @@ body {
         h2 {
           padding-left: 2em;
           margin-bottom: 1em;
+          max-width: 100%;
+          /* @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          } */
         }
 
         ul {
@@ -96,6 +110,9 @@ body {
       }
       #top_story {
         width: 25%;
+        @media screen and (max-width: 768p) {
+          width: 100%;
+        }
 
         flex-wrap: wrap;
         h2 {
