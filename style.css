@@ -80,16 +80,15 @@ body {
       }
 
       #news {
+        margin-top: 1em;
         width: 40%;
-
+        /* @media screen and (max-width: 768p) {
+          width: 100%;
+        } */
         h2 {
           padding-left: 2em;
           margin-bottom: 1em;
           max-width: 100%;
-          /* @media screen and (max-width: 768px) {
-            display: flex;
-            flex-direction: column;
-          } */
         }
 
         ul {
@@ -107,8 +106,12 @@ body {
             }
           }
         }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
       #top_story {
+        margin-top: 1em;
         width: 25%;
         @media screen and (max-width: 768p) {
           width: 100%;
@@ -137,8 +140,12 @@ body {
             }
           }
         }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
       #gallery {
+        margin-top: 1em;
         width: 40%;
         h2 {
           padding-left: 2em;
@@ -156,8 +163,12 @@ body {
             }
           }
         }
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
       #connect {
+        margin-top: 1em;
         width: 25%;
         h2 {
           text-align: center;
@@ -170,6 +181,9 @@ body {
           display: flex;
           justify-content: space-evenly;
           background-color: var(--color2);
+        }
+        @media screen and (max-width: 768px) {
+          width: 100%;
         }
       }
     }
